@@ -1,5 +1,5 @@
 FROM centos:latest
-MAINTAINER Dharma (dharamg36@gmail.com)
+MAINTAINER tanshin (pan.tanshin@gmail.com)
 
 #RUN echo "Asia/Shanghai" > /etc/timezone
 
