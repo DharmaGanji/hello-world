@@ -6,8 +6,7 @@ MAINTAINER tanshin (pan.tanshin@gmail.com)
 # now add java and tomcat support in the container
 ADD jdk-7u80-linux-x64.tar.gz  /usr/local/
 ADD apache-tomcat-7.0.94.tar.gz /usr/local/
-COPY ./webapp.war /usr/local/tomcat/webapp
-
+COPY ./webapp.war /opt/apache-tomcat-7.0.94/webapps
 # configuration of java and tomcat ENV
 ENV JAVA_HOME /usr/local/jdk1.7.0_80
 ENV CLASSPATH $JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
